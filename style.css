@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  scrollbar-width: none;
+}
+/* .imageKC {
+  background-image: url("image/bluewall.jpg");
+  display:flex;
+  align-items : row;
+  justify-content: center;
+  position: relative;
+} */
+/*.imageKC img{
+  height: 50%;
+  position: absolute;
+  right: 0;
+} */
+
+.button {
+  font-size: 140%;
+}
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_bar li a:hover:not(.active) {
+  border-radius: 16px;
+  opacity: 0.8;
+  background: linear-gradient(to top, #000c66, #000f80, #000c66);
+}
+
+.nav_bar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 26px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.nav_bar a {
+  color: white;
+  font-size: large;
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.active {
+  border: 0.16em solid rgb(0, 182, 228);
+  padding: 28px;
+  background: #073d7ca6;
+}
+
+.nav_bar .menu-hamburger {
+  display: none;
+  width: 60px;
+  position: fixed;
+  left: 3%;
+}
+
+.mise_en_page {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 1.4em;
+  color: white;
+  padding: 14px;
+  margin: 1%;
+  text-align: justify;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to right,
+    #1b5989,
+    #00479c,
+    #1b5989
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  text-align: center;
+  padding: 54px;
+}
+
+h2 {
+  font-size: 2.2em;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline; /* Pour forcer le dégradé à appliquer uniquement au texte */
+}
+
+body {
+  background: url("image/kc_fond.png");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.conteneur {
+  margin: 2%;
+  border:  solid #0c0c4c;
+  border-radius: 6px;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: linear-gradient(
+    to right,
+    #1b5989,
+    #00479c,
+    #1b5989
+  ); 
+  color:white;
+  
+}
+.conteneur a{
+  color: white !important;
+}
+
+.table_form {
+  margin: auto;
+  border-radius: 16px;
+  border-collapse: collapse;
+  font-size: 1.2em;
+}
+
+.table_form ul {
+  padding-left: 28px;
+}
+
+.yt_container {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 300px;
+  width: 100%;
+  background: #020018;
+}
+
+.yt_container iframe {
+  width: 90%;
+  height: 100%;
+}
+
+.mention_form {
+  padding: 16px 16px 16px 0px;
+  margin: 2%;
+  font-size: 1.2em;
+  width: 95%;
+  color: white;
+  text-align: justify;
+  border: 2px solid cyan;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  background: #70e1f5; /* fallback for old browsers */
+  background: linear-gradient(to right, #1b5989, #00479c, #1b5989);
+}
+
+.twitch_container {
+  width: 80%;
+  max-width: 1200px;
+  height: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+#twitch-embed {
+  width: 100%;
+  height: 100%;
+}
+
+.foot_form {
+  display: inline;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 1%;
+}
+
+/* Media Query pour changer la disposition à un certain point de rupture */
+@media screen and (max-width: 1760px) {
+  h1 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding: 54px;
+  }
+
+  .nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 83, 116, 0.726);
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -200%; /*faire sortire le menu de l'écran */
+  }
+  .nav-link.mobile-menu {
+    margin-left: 0;
+    transition: all 0.2s ease;
+  }
+  .nav-link ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_bar .nav-link ul li {
+    margin: 25px;
+  }
+  .nav_bar .menu-hamburger {
+    display: block;
+    right: 3%;
+  }
+  .active {
+    background-color: none;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  h1 {
+    font-size: 3em;
+  }
+  .conteneur {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background: linear-gradient(to right, #3ec0ff, #26b9ff, #26b9ff, #3ec0ff);
+  }
+  .nav_bar .menu-hamburger {
+    right: 0%;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  .conteneur {
+    border: 2px solid #0c0c4c;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: linear-gradient(to right, #3ec0ff, #26b9ff, #26b9ff, #3ec0ff);
+  }
+  .nav_bar .menu-hamburger {
+    right: 0%;
+    width: 25px;
+  }
+  .mention_form li {
+    padding: 1%;
+  }
+}
+
+/* @media (max-width: 500px){
+ 
+} */

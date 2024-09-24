@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav_bar">
+        <h1>Valorant</h1>
+        <div class = "nav-link">
+            <ul>
+            <li><a class="button" href="index.html "><strong>Accueil</strong></a></li>
+            <li><a class="button" href="lol.html "><strong>League of Legends</strong></a></li>
+            <li><a class="button" href="tft.html "><strong>Teamfight Tactics</strong></a></li>
+            <li><a class="active" href="valo.html "><strong>Valorant</strong></a></li>
+            <li><a class="button" href="tm.html "><strong>Trackmania</strong></a></li>
+            <li><a class="button" href="rl.html "><strong>Rocket League</strong></a></li>
+            <li><a class="button" href="twitch.html "><strong>Twitch</strong></a></li>
+            <li><a class="button" href="https://www.karminecorp.fr/ " target="_blank"><strong>Site Karmine</strong></a></li>
+            <!-- target="_blank" ouvrir un lien dans un nouvel onglet, la syntaxe est la suivante-->
+            </ul>
+        </div>
+    <img src="image/hamburger.png" alt="menu hamburger" class="menu-hamburger" />
+    </nav>
+    <div class="mise_en_page">
+        <h2><strong>Equipe masculine</strong></h2>
+        <p>Le 5 mai 2022, la Karmine Corp se lance sur le jeu de tir à la première personne (FPS) de Riot Games Valorant avec les joueurs Alexis « Newzera » Humbert, Michael « mikee » Lim, Jonathan « TakaS » Paupard et Ryad « Shin » Ensaad et Amine « Amilwa
+            » Saidi. Ils sont coachés par deux anciens membres de l'équipe Vitality, Arthur « pm » Guillermet et Ahmed « ZE1SH » El Sheikh86.</p>
+        <h2><strong>Equipe féminine</strong></h2>
+        <p>La Karmine Corp a annoncé le 9 février dernier une équipe 100% féminine qui participera à l’édition 2023 des Game changers EMEA. L’équipe est composée de Asma « LiriLia » Boughida, Léa « matriix » Ransquin, Mélina « Mel » Houssein, Mathilde «
+            Nelo » Beltoise et Nouhara « Ninou » Marcos Oraha. Elles sont coachées par Mathieu « LaAw » Plantin et Emma « Emash » Beziaud Le Pochat. L’équipe est aussi 100% francophone88. Après une décevante première saison VCT en 2023-2024, et comme
+            annoncé par certains joueurs lors du KCX3, le 10 novembre 2023, la Karmine Corp annonce un changement d'équipe pour la saison 2023-2024 de VCT</p>
+    </div>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-link")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
