@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Le site n'est pas fini -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Karmine Corp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav_bar">
+    <h1>Karmine Corp</h1>
+    <div class = "nav-link">
+      <ul>
+        <li><a class="button" href="index.html "><strong>Accueil</strong></a></li>
+        <li><a class="button" href="lol.html "><strong>League of Legends</strong></a></li>
+        <li><a class="button" href="tft.html "><strong>Teamfight Tactics</strong></a></li>
+        <li><a class="button" href="valo.html "><strong>Valorant</strong></a></li>
+        <li><a class="button" href="tm.html "><strong>Trackmania</strong></a></li>
+        <li><a class="button" href="rl.html "><strong>Rocket League</strong></a></li>
+        <li><a class="active" href="twitch.html "><strong>Twitch</strong></a></li>
+        <li><a class="button" href="https://www.karminecorp.fr/ " target="_blank"><strong>Site Karmine</strong></a></li>
+        <!-- target="_blank" ouvrir un lien dans un nouvel onglet, la syntaxe est la suivante-->
+      </ul>
+    </div>
+    <img src="image/hamburger.png" alt="menu hamburger" class="menu-hamburger" />
+  </nav>
+  <main>
+    <div  class="mise_en_page">
+    <h2>Chaine Twitch</h2>
+      <!-- Add a placeholder for the Twitch embed -->
+      <div class = "twitch_container">   
+          <div id="twitch-embed"></div>
+      </div>  
+    <h2>Chaine Youtube</h2>
+  </div>
+
+      <div class="yt_container">
+      <iframe src="https://www.youtube.com/embed/YpARbGsES8g?si=FmXIXji1u60WW5OM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <iframe  src="https://www.youtube.com/embed/Cek49rrVW_s?si=hty_MIik89Z3_ON5"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <iframe src="https://www.youtube.com/embed/iwQxHxF4WJM?si=K9_a2U4eXbLdnZBz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5JOBEkpz_gY?si=UwgiUuiPFfS2O2P4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>    
+  </main>
+
+</body>
+
+    <!-- Twitch embed --> 
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {channel: "karminecorp", width: "100%",height: "100%"});
+    </script>
+
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".nav-link")
+    
+      menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+      })
+  </script>
+</html>

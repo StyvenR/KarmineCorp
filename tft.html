@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFight Tactics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav_bar">
+        <h1>TeamFight Tactics</h1>
+        <div class = "nav-link">
+            <ul>
+            <li><a class="button" href="index.html "><strong>Accueil</strong></a></li>
+            <li><a class="button" href="lol.html "><strong>League of Legends</strong></a></li>
+            <li><a class="active" href="tft.html "><strong>Teamfight Tactics</strong></a></li>
+            <li><a class="button" href="valo.html "><strong>Valorant</strong></a></li>
+            <li><a class="button" href="tm.html "><strong>Trackmania</strong></a></li>
+            <li><a class="button" href="rl.html "><strong>Rocket League</strong></a></li>
+            <li><a class="button" href="twitch.html "><strong>Twitch</strong></a></li>
+            <li><a class="button" href="https://www.karminecorp.fr/ " target="_blank"><strong>Site Karmine</strong></a></li>
+            <!-- target="_blank" ouvrir un lien dans un nouvel onglet, la syntaxe est la suivante-->
+            </ul>
+        </div>
+    <img src="image/hamburger.png" alt="menu hamburger" class="menu-hamburger" />
+    </nav>
+    <div class="mise_en_page">
+        <h2><strong>Premier champion du monde de l'histoire</strong></h2>
+        <p>
+            Le 22 août 2020, la Karmine Corp annonce la création de son roster Teamfight Tactics et la participation à la Teamfight Tactics Galaxies Championship que leur joueur Emre « Double61 » Demirtas remportera, devenant le tout premier champion du monde sur
+            ce jeu. Début 2021, l'équipe engage un second joueur : Muhammed « CanbizZ » Canbaz, le partenaire de jeu principal de Double61. À noter que les deux joueurs ont la particularité de venir tous les deux du département de l'Orne et sont cousins.
+        </p>
+    </div>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-link")
+  
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

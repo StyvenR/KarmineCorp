@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackMania</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav_bar">
+        <h1>TrackMania</h1>
+        <div class = "nav-link">
+            <ul>
+                <li><a class="button" href="index.html "><strong>Accueil</strong></a></li>
+                <li><a class="button" href="lol.html "><strong>League of Legends</strong></a></li>
+                <li><a class="button" href="tft.html "><strong>Teamfight Tactics</strong></a></li>
+                <li><a class="button" href="valo.html "><strong>Valorant</strong></a></li>
+                <li><a class="active" href="tm.html "><strong>Trackmania</strong></a></li>
+                <li><a class="button" href="rl.html "><strong>Rocket League</strong></a></li>
+                <li><a class="button" href="twitch.html "><strong>Twitch</strong></a></li>
+                <li><a class="button" href="https://www.karminecorp.fr/ " target="_blank"><strong>Site Karmine</strong></a></li>
+            <!-- target="_blank" ouvrir un lien dans un nouvel onglet, la syntaxe est la suivante-->
+            </ul>
+        </div>
+    <img src="image/hamburger.png" alt="menu hamburger" class="menu-hamburger" />
+    </nav>
+    <div class="mise_en_page">
+        <h2><strong>Présentation</strong></h2>
+        <p>
+            Le 17 juillet 2020, la Karmine Corp annonce sa participation a la Trackmania Cup ainsi que son introduction sur la scène e-sport de TrackMania avec le pilote français Romain « DarkeR » Dassonneville. Un mois plus tard, le 22 août 2020, l'arrivée de Brendan
+            « Bren » Seve est annoncée comme pilote titulaire pour la Trackmania Grand League, la compétition la plus prestigieuse sur le jeu. DarkeR lui continuera de participer à d'autres compétitions en plus d'étudier les circuits du jeu (le hunting)
+            en contre-la-montre.
+        </p>
+        <p>
+            Les débuts de Bren en TMGL sous les couleurs de la KC ont lieu début 2021, pour l'édition d'hiver. Bren réussit à se qualifier directement pour la finale en se plaçant 7ème sur 16 des séries préliminaires, mais ne parvient pas à marquer de point à la
+            première étape de la finale et fait partie des 3 premiers coureurs éliminés. Fin 2021, se déroule la seconde et dernière TMGL de l'année. Régulier, mais manquant le coche lors des journées où les points sont multipliés, Bren rate de peu la
+            qualification directe pour la finale d'automne 2021. Il est obligé de passer par les repêchages. Il arrive jusqu'en finale des repêchages mais se fera battre d'une courte tête par le Français Alexandre « Binks » Touche, qui l'élimine.
+        </p>
+    </div>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-link")
+  
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</html>

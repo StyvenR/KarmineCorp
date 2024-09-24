@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket League</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+    <nav class="nav_bar">
+    <h1>Rocket League</h1>
+        <div class = "nav-link">
+        <ul>
+            <li><a class="button" href="index.html "><strong>Accueil</strong></a></li>
+            <li><a class="button" href="lol.html "><strong>League of Legends</strong></a></li>
+            <li><a class="button" href="tft.html "><strong>Teamfight Tactics</strong></a></li>
+            <li><a class="button" href="valo.html "><strong>Valorant</strong></a></li>
+            <li><a class="button" href="tm.html "><strong>Trackmania</strong></a></li>
+            <li><a class="active" href="rl.html "><strong>Rocket League</strong></a></li>
+            <li><a class="button" href="twitch.html "><strong>Twitch</strong></a></li>
+            <li><a class="button" href="https://www.karminecorp.fr/ " target="_blank"><strong>Site Karmine</strong></a></li>
+        </ul>
+    </div>
+    <img src="image/hamburger.png" alt="menu hamburger" class="menu-hamburger" />
+    </nav>
+    <div class="mise_en_page">
+        <div>
+            <h2><strong>Débuts en RLCS</strong></h2>
+                <p>
+                    La Karmine s'engage en Rocket League Championship Series (RLCS), le circuit officiel du jeu. Le circuit est divisé en 3 segments (automne, hiver et printemps) 
+                    où les meilleures équipes à l'issue de ces segments se qualifient pour des étapes mondiales intermédiaires. Les segments sont eux-mêmes entrecoupés de 3 
+                    tournois qui servent à distribuer des points. Après des bons débuts lors de la première étape, où la Karmine Corp termine demi-finaliste, le Mur Bleu rentre 
+                    dans le rang. Ils ne parviennent plus à se hisser dans le dernier carré et finissent souvent au milieu du peloton. S'ils se sont qualifiés à toutes les étapes, 
+                    ils ne parviennent pas à marquer assez de points pour participer aux épreuves mondiales d'automne et d'hiver.</p>
+                <p>
+                    En avril 2022, la Karmine Corp recrute un nouveau joueur, l'anglais Joseph « noly » Kidd, pour remplacer Stake, ainsi que Wagner « Eversax » Benjamin, 
+                    qui passe de remplaçant à coach principal et assisté par le coach Arleyobi. 
+                </p>
+        </div>
+        <div>
+            <h2><strong>Premiers gros succès en RLCS</strong></h2>
+                <p>
+                    En Septembre 2022, la KCorp annonce un nouveau roster pour la saison à venir. Aztral et Noly quittent la structure et ce sont les deux français Vatira et 
+                    Exotiik qui les remplacent. Le premier est considéré comme l'un des meilleurs joueurs du monde tandis que le deuxième est une étoile montante du milieu.
+                </p>
+                <p>
+                    En Octobre 2022, durant le split (segment) d'Automne, cette nouvelle équipe gagne déjà un titre Regional Europe, une première pour la KCorp. 
+                    Début 2023, l'équipe remporte deux autres titres Regional Europe. <br>
+                    Le 9 avril 2023 marque le point culminant de l'histoire de la KCorp en RLCS: en s'imposant 4-2 contre Faze en finale, la structure remporte un 
+                    titre Major (Major d'Hiver 2023), titre international le plus important après les championnats du monde.
+                    Vatira sera désigné meilleur joueur offensif du Major ainsi que meilleur joueur défensif.
+                </p>
+        </div>
+        <div>
+            <h2><strong>Championnat du monde 2022-2023 et conclusion de la saison</strong></h2>
+                <p>Après un troisième segment solide, en ayant fait quatrième, deuxième, puis quatrième lors des régionaux européens, en ayant gagné le match d'exhibition
+                    des Jeux Olympiques d'esport contre Gen.G, ainsi qu'une troisième place lors du Spring Split, la Karmine Corp va aux Worlds en tant que seed 1 européen.<br>
+                    L'équipe finira à la quatrième place en tombant contre les futurs vainqueurs, la Team Vitality.<br><br>
+                    Vatira finira meilleur joueur européen de la saison, meilleur joueur défensif lors des mondiaux.<br><br>
+                    À l'issue de la saison et après un show match perdu contre G2 lors du KCX3, l'équipe annonce la séparation de l'équipe. Cette séparation est officialisée 
+                    le 25 Octobre avec les départs de Eversax, Itachi et Exotiik. Vatira reste membre du club.
+                </p>
+        </div>
+    </div>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-link")
+  
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</html>
